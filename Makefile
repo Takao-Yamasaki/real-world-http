@@ -5,4 +5,4 @@ exec:
 ps:
 	docker compose ps
 run:
-	docker compose exec -it app go run main.go
+	docker compose exec -it app go run server.go
