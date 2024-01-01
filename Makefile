@@ -1,7 +1,7 @@
 .PHONY: help
 .DEFAULT_GOAL := help
 up: ## コンテナを起動
-	@docker compose up -d
+	@docker compose up
 down: ## コンテナを停止
 	@docker compose down
 exec: ## Goのコンテナに入る（開発用）
