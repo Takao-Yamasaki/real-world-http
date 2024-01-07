@@ -1,12 +1,22 @@
 version: "3"
 services:
-  app:
+  server:
     build:
       context: .
-      dockerfile: ./Dockerfile
+      dockerfile: ./server/Dockerfile
     tty: true
     # volumes:
-    #   - .:/go/src/app
+    #   - ./server:/go/src/server
     ports:
       - "18888:18888"
-    working_dir: /go/src/app
+    working_dir: /go/src/server
+  client:
+    build:
+      context: .
+      dockerfile: ./client/Dockerfile
+    tty: true
+    volumes:
+      - ./client:/go/src/client
+    ports:
+      - "8080:8080"
+    working_dir: /go/src/client

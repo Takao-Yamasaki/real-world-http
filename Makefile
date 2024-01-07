@@ -1,15 +1,21 @@
-.PHONY: help
+.PHONY: help client server
 .DEFAULT_GOAL := help
-up: ## コンテナを起動
-	@docker compose up
+ups: ##  Goサーバーのコンテナを起動
+	@docker compose up server
+upc: ##  Goサーバーのコンテナを起動
+	@docker compose up client
 down: ## コンテナを停止
 	@docker compose down
-exec: ## Goのコンテナに入る（開発用）
-	@docker compose exec -it app sh
+execc: ## Goクライアントのコンテナに入る（開発用）
+	@docker compose exec -it client sh
+execs: ## Goサーバーのコンテナに入る（開発用）
+	@docker compose exec -it server sh
 ps: ## コンテナの稼働状況確認
-	docker compose ps
-run: ## Goサーバーを起動（開発用）
-	@docker compose exec -it app go run server.go
+	@docker compose ps
+runs: ## Goサーバーを起動（開発用）
+	@docker compose exec -it server go run server.go
+runc: ## Goクライアントを起動（開発用）
+	@docker compose exec -it client go run client.go
 rebuild: ## コンテナをリビルド（開発用）
 	@docker compose up --build
 help: ## ヘルプを表示
