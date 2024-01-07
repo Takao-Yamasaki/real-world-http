@@ -1,0 +1,100 @@
+{
+  "meta": {
+    "limit": 2,
+    "total_count": 2
+  },
+  "objects": [
+  {
+    "description": "Senior Senator for Ohio", 
+    "party": "Democrat",
+    "congress_numbers": [223,224,225], 
+    "state": "OH",
+    "startdate": "2010-01—03T05:04:09.456",
+    "enddate": "2020-11-12T03:01:02.567812359",
+    "seniority": 37, 
+    "current": true,
+    "duties": {
+      "committee": ["Ways and Means","Judiciary","Steering"],
+      "caucus": ["Automotive","Human Rights","SteelIndustry"]
+    },
+    "personal": {
+      "firstname":"Sherrod",
+      "lastname":"Brown",
+      "birthday":"1952-11-09",
+      "social_media": {
+        "website":"https://www.brown.senate.gov",
+        "rss_url":"http://www.brown.senate.gov/rss/feeds",
+        "twittered":"SenSherrodBrown"
+      },
+      "address": {
+        "home": {
+          "number":"9115-ext",
+          "street":"Vaughan",
+          "apt":null,
+          "city":"Columbus",
+          "state":"OH",
+          "zipcode":43221,
+          "phone": "614-742-8331"
+        },
+        "work": {
+          "number":"Hart Senate Office Building",
+          "street":"Second Street NE",
+          "apt":713,
+          "city":"Washington",
+          "state":"DC",
+          "zipcode":20001,
+          "phone": "202-553-5132"
+        }
+      }, 
+      "cspanid": 57884
+    }, 
+    "contrib": 2571354.93
+  },
+  {
+    "description": "Junior Senator for Wisconsin", 
+    "party": "Indpendent",
+    "congress_numbers": [113,114,115], 
+    "state": "WI",
+    "startdate": "2013-01—03T03:02:01.123",
+    "enddate": "2017-01-03T01:02:03.123456789",
+    "seniority": 29, 
+    "current": true,
+    "duties": {
+      "committee": ["Intelligence","Judiciary",
+                    "Appropriations"],
+      "caucus": ["Congressional Progressive","Afterschool"]
+    },
+    "personal": {
+      "firstname":"Tammy",
+      "lastname":"Baldwin",
+      "birthday":"1962-02-11",
+      "social_media": {
+       "website":"https://www.baldwin.senate.gov",
+       "rss_url":"http://www.baldwin.senate.gov/rss/feeds",
+       "twittered":"SenBaldwin"
+      },
+      "address": {
+        "home": {
+          "number":"23315",
+          "street":"Wallbury Court",
+          "apt":"17",
+          "city":"Madison",
+          "state":"WI",
+          "zipcode":53779,
+          "phone": "608-742-8331"
+        },
+        "work": {
+          "number":"Hart Senate Office Building",
+          "street":"Second Street NE",
+          "apt":355,
+          "city":"Washington",
+          "state":"DC",
+          "zipcode":20001,
+          "phone": "202-224-2315"
+        }
+      }, 
+      "cspanid": 57884
+    }, 
+    "contrib": 2571354.93
+  } ]
+}
