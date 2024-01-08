@@ -17,4 +17,11 @@ func main() {
 		panic(err)
 	}
 	log.Println(string(body))
+	// ステータスを表示
+	log.Println("Status:", resp.Status)
+	log.Println("StatusCode:", resp.StatusCode)
+	// ヘッダーを表示
+	log.Println("Headers:", resp.Header)
+	// 特定のヘッダーを取得
+	log.Println("Content-Length:", resp.Header.Get("Content-Length"))
 }
