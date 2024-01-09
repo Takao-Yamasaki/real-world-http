@@ -2,7 +2,7 @@
 FROM golang:1.21-alpine
 ENV ROOT=/go/src/server
 WORKDIR ${ROOT}
-COPY server/go.mod ${ROOT}/
+COPY server/go.mod server/go.sum ${ROOT}/
 RUN go mod download
 CMD ["/bin/sh"]
 
