@@ -1,0 +1,13 @@
+{
+  "name": "real-world-http",
+  "dockerComposeFile": "../../compose.yml",
+  "service": "server",
+  "workspaceFolder": "/go/src/server",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "golang.go"
+      ]
+    }
+  }
+}

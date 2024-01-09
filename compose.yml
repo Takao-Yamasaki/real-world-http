@@ -5,6 +5,8 @@ services:
       context: .
       dockerfile: ./server/Dockerfile
     tty: true
+    volumes:
+      - ./server:/go/src/server
     ports:
       - "18888:18888"
     working_dir: /go/src/server
