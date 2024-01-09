@@ -14,6 +14,7 @@ func main() {
 	var buffer bytes.Buffer
 	writer := multipart.NewWriter(&buffer)
 	writer.WriteField("name", "Michael Jackson")
+	// 個別ファイル書き込みのio.Writer
 	fileWriter, err := writer.CreateFormFile("thumbnail", "photo.jpg")
 	if err != nil {
 		panic(err)
